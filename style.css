@@ -90,3 +90,8 @@ span {
   bottom: 3.5rem;
   box-shadow: 1px 10px 20px 1px hsl(0, 80%, 86%);
 }
+
+.register-btn:hover {
+  background: linear-gradient(135deg, hsl(0, 100%, 98%), hsl(0, 80%, 86%));
+  cursor: pointer;
+}
