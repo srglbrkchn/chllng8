@@ -4,21 +4,38 @@ body {
   margin: 0;
 }
 
-
-.content {
-  background: url("images/bg-pattern-desktop.svg");
-  background-size: contain;
+img {
   width: 100%;
-  display: flex;
+  height: 100%;
 }
 
+span {
+  color: hsl(0, 36%, 70%);
+  font-weight: 200;
+}
+
+::placeholder {
+  color: hsl(0, 36%, 70%);
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  background: url("images/bg-pattern-desktop.svg");
+  background-size: cover;
+}
 
 .picture {
   width: 42%;
+  height: 100%;
 }
 
 .box {
   width: 58%;
+  /* background: url("images/bg-pattern-desktop.svg");
+  background-size: contain; */
 }
 
 .text {
@@ -30,15 +47,42 @@ body {
   margin: 4rem auto;
 }
 
+.logo {
+  width: 10rem;
+}
+
 .heading {
   font-size: 65px;
-  letter-spacing: 15px;
-  margin: 8rem auto 2rem;
-  line-height: 1.2;
+  letter-spacing: 17px;
+  margin: 8rem auto 1rem;
   font-weight: 600;
 }
 
-span {
+.explanation {
   color: hsl(0, 36%, 70%);
-  font-weight: 200;
+  line-height: 2;
+  width: 28rem;
+}
+
+.register {
+  width: 25rem;
+  margin-top: 2rem;
+  padding: 0.2rem;
+  padding-left: 1rem;
+  border-radius: 30px;
+  border: solid 1px hsl(0, 36%, 70%);
+  outline: none;
+  background-color: hsl(0, 100%, 98%)
+}
+
+.email {
+  width: 80%;
+  padding: 1rem;
+  border: none;
+  outline:none;
+  background-color: inherit;
+}
+
+.register-btn {
+  background-color: hsl(0, 74%, 74%);
 }
