@@ -9,6 +9,16 @@ span {
   font-weight: 200;
 }
 
+label {
+  display: inline-block;
+  position: relative;
+  right: 4.5rem;
+  bottom: 1rem;
+  font-size: 13px;
+  color: hsl(0, 74%, 74%);
+  display: none;
+}
+
 ::placeholder {
   color: hsl(0, 36%, 70%);
   font-family: 'Josefin Sans', sans-serif;
@@ -45,6 +55,7 @@ span {
 }
 
 .heading {
+  color: hsl(0, 6%, 24%);
   font-size: 65px;
   letter-spacing: 17px;
   margin: 8rem auto 1rem;
@@ -64,17 +75,31 @@ span {
   padding-left: 1rem;
   border-radius: 30px;
   border: solid 1px hsl(0, 36%, 70%);
-  outline: none;
   background-color: hsl(0, 100%, 98%)
+}
+
+:focus{
+  display: inline-block;
+  outline-color: hsl(0, 36%, 70%);
+  box-shadow: 0 0 0 2px hsl(0, 36%, 70%);
+  border-radius: 2px;
 }
 
 .email {
   width: 60%;
   padding: 1rem;
   border: none;
-  outline:none;
+  outline: none;
   background-color: inherit;
   display: inline-block;
+}
+
+.icon-error {
+  display: inline-block;
+  position: relative;
+  top: 0.5rem;
+  right: -0.5rem;
+  display: none;
 }
 
 .register-btn {
