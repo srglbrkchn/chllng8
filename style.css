@@ -10,7 +10,6 @@ span {
 }
 
 label {
-  display: inline-block;
   position: relative;
   right: 4.5rem;
   bottom: 1rem;
@@ -28,8 +27,6 @@ label {
 .content {
   width: 100%;
   display: flex;
-  background: url("images/bg-pattern-desktop.svg");
-  background-size: cover;
 }
 
 .picture {
@@ -37,8 +34,15 @@ label {
   height: 100%;
 }
 
+.mobile-picture {
+  display: none;
+}
+
 .box {
   width: 58%;
+  background: url("images/bg-pattern-desktop.svg");
+  background-size: cover;
+
 }
 
 .text {
@@ -78,7 +82,7 @@ label {
   background-color: hsl(0, 100%, 98%)
 }
 
-:focus{
+:focus {
   display: inline-block;
   outline-color: hsl(0, 36%, 70%);
   box-shadow: 0 0 0 2px hsl(0, 36%, 70%);
@@ -104,19 +108,66 @@ label {
 
 .register-btn {
   background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
-  width: 6.2rem;
+  width: 6.4rem;
   border: none;
-  padding: 1rem;
+  padding: 1.2rem;
   border-radius: 30px;
   text-align: center;
   display: inline-block;
   position: relative;
   left: 21.5rem;
-  bottom: 3.5rem;
+  bottom: 3.7rem;
   box-shadow: 1px 10px 20px 1px hsl(0, 80%, 86%);
 }
 
 .register-btn:hover {
   background: linear-gradient(135deg, hsl(0, 100%, 98%), hsl(0, 80%, 86%));
   cursor: pointer;
+}
+
+/* Tablet size */
+@media (max-width: 1200px) and (min-width: 700px) {
+  .picture {
+    display: none;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  .mobile-picture {
+    display: inline-block;
+    margin-top: 40px;
+    width: 90%;
+  }
+
+  .heading {
+    margin-top: 5rem;
+  }
+}
+
+/* Mobile phone size */
+@media (max-width: 700px) {
+  .picture {
+    display: none;
+  }
+
+  .box {
+    background: none;
+    width: 100%;
+    margin: auto;
+  }
+
+  .text {
+    width: 100%;
+    margin: auto;
+  }
+
+  .mobile-picture {
+    display: inline-block;
+    margin-top: 40px;
+    width: 100%;
+  }
+
+
 }
