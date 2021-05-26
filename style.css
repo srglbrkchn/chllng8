@@ -126,7 +126,7 @@ label {
 }
 
 /* Tablet size */
-@media (max-width: 1200px) and (min-width: 700px) {
+@media (max-width: 1200px) and (min-width: 570px){
   .picture {
     display: none;
   }
@@ -143,14 +143,47 @@ label {
 
   .heading {
     margin-top: 5rem;
+    margin-left: 0;
+    width: 95%;
+  }
+
+
+  .register {
+    width: 22rem;
+  }
+
+  .register-btn {
+    width: 6rem;
+    padding: 1.2rem;
+    position: relative;
+    left: 20rem;
+    bottom: 3.7rem;
   }
 }
 
+
 /* Mobile phone size */
 @media (max-width: 700px) {
+
+  body {
+    min-width: 375px;
+    background:  linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  }
+
+  ::placeholder {
+    font-size: 14px;
+  }
+
   .picture {
     display: none;
   }
+
+  .logo {
+    width: 5rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+
 
   .box {
     background: none;
@@ -159,15 +192,61 @@ label {
   }
 
   .text {
-    width: 100%;
+    width: 80%;
     margin: auto;
   }
 
   .mobile-picture {
     display: inline-block;
-    margin-top: 40px;
+    margin-top: 2rem;
     width: 100%;
   }
 
+  .explanation {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: auto;
+  }
+
+  .heading {
+    width: 80%;
+    text-align: center;
+    font-size: 250%;
+    margin: 4rem auto 2rem;
+    letter-spacing: 10px;
+
+  }
+
+  .register {
+    width: 90%;
+      margin-top: 2rem;
+      padding: 0.5rem;
+      padding-left: 1rem;
+  }
+
+  .email {
+    width: 60%;
+    font-size: 14px;
+    padding: 0.4rem;
+    background-color: inherit;
+    display: inline-block;
+  }
+
+  .register-btn {
+    width: 4rem;
+    left: 15rem;
+    padding: 0.8rem;
+    bottom: 3.1rem;
+
+  }
+
+  .icon-error {
+    top: 0.2rem;
+    right: -0.7rem;
+    display: none;
+    width: 1rem;
+  }
 
 }
