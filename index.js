@@ -16,3 +16,9 @@ document.querySelector('.register-btn').addEventListener('click', function(){
 function  emailIsValid(email) {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
+
+let bird = new Audio('sounds/bird.mp3');
+
+document.querySelector('.register-btn').addEventListener('click', function(){
+  bird.play();
+});

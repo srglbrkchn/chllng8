@@ -42,7 +42,6 @@ label {
   width: 58%;
   background: url("images/bg-pattern-desktop.svg");
   background-size: cover;
-
 }
 
 .text {
@@ -79,7 +78,8 @@ label {
   padding-left: 1rem;
   border-radius: 30px;
   border: solid 1px hsl(0, 36%, 70%);
-  background-color: hsl(0, 100%, 98%)
+  background-color: hsl(0, 100%, 98%);
+  transition: 0.6s;
 }
 
 :focus {
@@ -118,15 +118,17 @@ label {
   left: 21.5rem;
   bottom: 3.7rem;
   box-shadow: 1px 10px 20px 1px hsl(0, 80%, 86%);
+  transition: 0.6s;
 }
 
 .register-btn:hover {
+  transform: scaleY(1.2) perspective(1px);
   background: linear-gradient(135deg, hsl(0, 100%, 98%), hsl(0, 80%, 86%));
   cursor: pointer;
 }
 
 /* Tablet size */
-@media (max-width: 1200px) and (min-width: 570px){
+@media (max-width: 1200px) and (min-width: 500px) {
   .picture {
     display: none;
   }
@@ -135,39 +137,64 @@ label {
     width: 100%;
   }
 
+  .text {
+    margin: 2rem auto;
+  }
+
   .mobile-picture {
     display: inline-block;
-    margin-top: 40px;
-    width: 90%;
+    width: 85%;
+    min-width: 380px;
+  }
+
+  .logo {
+    width: 10rem;
+    position: static;
+    margin: 2rem 0 3rem;
   }
 
   .heading {
-    margin-top: 5rem;
+    margin-top: 3rem;
     margin-left: 0;
-    width: 95%;
+    width: 90%;
   }
 
+  .explanation{
+    width: 90%;
+    min-width: 385px;
+    max-width: 450px;
+  }
 
   .register {
-    width: 22rem;
+    width: 20rem;
   }
 
   .register-btn {
     width: 6rem;
     padding: 1.2rem;
     position: relative;
-    left: 20rem;
+    left: 18rem;
     bottom: 3.7rem;
   }
 }
 
-
 /* Mobile phone size */
-@media (max-width: 700px) {
-
+@media (max-width: 500px) {
   body {
     min-width: 375px;
-    background:  linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  }
+
+  label {
+    position: relative;
+    left: 10%;
+    bottom: 3rem;
+    font-size: 12px;
+    display: none;
+  }
+
+  .content {
+    margin-bottom: 4rem;
   }
 
   ::placeholder {
@@ -179,11 +206,10 @@ label {
   }
 
   .logo {
-    width: 5rem;
+    width: 6rem;
     margin-top: 2rem;
     margin-left: 2rem;
   }
-
 
   .box {
     background: none;
@@ -192,7 +218,7 @@ label {
   }
 
   .text {
-    width: 80%;
+    width: 100%;
     margin: auto;
   }
 
@@ -203,7 +229,7 @@ label {
   }
 
   .explanation {
-    width: 100%;
+    width: 80%;
     text-align: center;
     font-size: 14px;
     line-height: 1.7;
@@ -211,19 +237,18 @@ label {
   }
 
   .heading {
-    width: 80%;
+    width: 70%;
     text-align: center;
     font-size: 250%;
     margin: 4rem auto 2rem;
     letter-spacing: 10px;
-
   }
 
   .register {
-    width: 90%;
-      margin-top: 2rem;
-      padding: 0.5rem;
-      padding-left: 1rem;
+    width: 17rem;
+    margin: 2rem auto;
+    padding: 0.5rem;
+    padding-left: 1rem;
   }
 
   .email {
@@ -235,11 +260,10 @@ label {
   }
 
   .register-btn {
-    width: 4rem;
-    left: 15rem;
-    padding: 0.8rem;
-    bottom: 3.1rem;
-
+    width: 4.3rem;
+    padding: 0.9rem;
+    left: 73%;
+    bottom: 5.1rem;
   }
 
   .icon-error {
@@ -248,5 +272,4 @@ label {
     display: none;
     width: 1rem;
   }
-
 }
