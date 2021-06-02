@@ -110,13 +110,13 @@ label {
   background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
   width: 6.4rem;
   border: none;
-  padding: 1.2rem;
+  padding: 1.07rem;
   border-radius: 30px;
   text-align: center;
   display: inline-block;
   position: relative;
   left: 21.5rem;
-  bottom: 3.7rem;
+  bottom: 3.6rem;
   box-shadow: 1px 10px 20px 1px hsl(0, 80%, 86%);
   transition: 0.6s;
 }
@@ -171,17 +171,17 @@ label {
 
   .register-btn {
     width: 6rem;
-    padding: 1.2rem;
+    padding: 1.07rem;
     position: relative;
     left: 18rem;
-    bottom: 3.7rem;
+    bottom: 3.6rem;
   }
 }
 
 /* Mobile phone size */
 @media (max-width: 500px) {
   body {
-    min-width: 375px;
+    min-width: 370px;
     background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
   }
 
@@ -261,9 +261,9 @@ label {
 
   .register-btn {
     width: 4.3rem;
-    padding: 0.9rem;
-    left: 73%;
-    bottom: 5.1rem;
+    padding: 0.86rem;
+    left: 72%;
+    bottom: 5.09rem;
   }
 
   .icon-error {
