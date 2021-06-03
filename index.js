@@ -8,7 +8,7 @@ document.querySelector('.register-btn').addEventListener('click', function(){
   }else {
     document.querySelectorAll('label')[0].style.display = 'inline-block';
     document.querySelector('.icon-error').style.display = 'inline-block';
-    document.querySelector('.register').style.border = "1.5px solid hsl(0, 93%, 68%)";
+    document.querySelector('.register').style.border = "2px solid hsl(0, 93%, 68%)";
   }
 });
 
