@@ -138,10 +138,9 @@ label {
 
   .box {
     width: 100%;
-    display: block;
-    background-color: #000;
+    background-color: none;
     background-image: url("images/bg-pattern-desktop.svg");
-    mix-blend-mode: color-burn;
+    mix-blend-mode: multiply;
   }
 
   .text {
