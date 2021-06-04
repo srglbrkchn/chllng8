@@ -222,6 +222,8 @@ label {
 
   .box {
     background: none;
+    background-color: none;
+    mix-blend-mode: multiply;
     width: 370px;
     margin: auto;
   }
