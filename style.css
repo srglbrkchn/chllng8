@@ -130,6 +130,9 @@ label {
 
 /* Tablet size */
 @media (max-width:1200px) and (min-width:600px) {
+  input, select, textarea {
+    font-size: 16px;
+  }
   .picture {
     display: none;
   }
@@ -198,6 +201,10 @@ label {
     bottom: 3rem;
     font-size: 12px;
     display: none;
+  }
+
+  input, select, textarea {
+    font-size: 16px;
   }
 
   .content {
