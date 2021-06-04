@@ -40,7 +40,9 @@ label {
 
 .box {
   width: 58%;
-  background: url("images/bg-pattern-desktop.svg");
+  background-color: hsl(0, 100%, 98%);
+  background-image: url("images/bg-pattern-desktop.svg");
+  mix-blend-mode: color;
   background-size: cover;
 }
 
@@ -160,7 +162,7 @@ label {
     width: 90%;
   }
 
-  .explanation{
+  .explanation {
     width: 90%;
     min-width: 385px;
     max-width: 450px;
