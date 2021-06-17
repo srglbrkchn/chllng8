@@ -184,6 +184,10 @@ footer {
     width: 21rem;
   }
 
+  .register-btn {
+    transform: scaleY(1.1);
+  }
+
   .icon-error {
     width: 1.5rem;
   }
@@ -270,7 +274,7 @@ footer {
   .register-btn {
     width: 3.8rem;
     padding: 0.6rem;
-    transform: scaleY(1.09);
+    transform: scaleY(1.1);
   }
 
   .icon-error {
