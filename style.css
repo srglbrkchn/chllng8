@@ -9,19 +9,18 @@ span {
   font-weight: 200;
 }
 
-label {
-  position: relative;
-  right: 4.5rem;
-  bottom: 1rem;
-  font-size: 13px;
-  color: hsl(0, 74%, 74%);
-  display: none;
-}
-
 ::placeholder {
   color: hsl(0, 36%, 70%);
   font-family: 'Josefin Sans', sans-serif;
   font-size: 16px;
+}
+
+p {
+  margin: 0;
+}
+
+footer {
+  margin-top: 1rem;
 }
 
 .content {
@@ -51,7 +50,7 @@ label {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: flex-start;
   margin: 4rem auto;
 }
 
@@ -73,12 +72,19 @@ label {
   width: 28rem;
 }
 
+.register-content {
+  display: flex;
+  flex-direction: column;
+}
+
 .register {
-  width: 22rem;
+  display: grid;
+  grid-template-columns: 1.5rem 55% 2.5rem 2.5rem 8rem;
+  grid-template-areas: ". mail . err registerbtn";
+  align-items: center;
   margin-top: 3rem;
-  padding: 0.77rem;
-  padding-left: 1rem;
   border-radius: 30px;
+  width: 27.5rem;
   border: solid 1px hsl(0, 36%, 70%);
   background-color: hsl(0, 100%, 98%);
   transition: 0.6s;
@@ -92,8 +98,9 @@ label {
 }
 
 .email {
-  width: 60%;
-  padding: 0.5rem;
+  grid-area: mail;
+  font-size: 13px;
+  width: 80%;
   border: none;
   outline: none;
   background-color: inherit;
@@ -101,33 +108,35 @@ label {
 }
 
 .icon-error {
-  width: 1.2rem;
-  display: inline-block;
-  position: relative;
-  top: 0.4rem;
-  right: -3rem;
+  grid-area: err;
+  width: 1.5rem;
   display: none;
 }
 
 .register-btn {
+  grid-area: registerbtn;
   background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
   width: 6.4rem;
   border: none;
-  padding: 1.2rem;
+  padding: 0.9rem;
   border-radius: 30px;
   text-align: center;
-  display: inline-block;
-  position: relative;
-  left: 21rem;
-  bottom: 3.77rem;
-  box-shadow: 1px 10px 20px 1px hsl(0, 80%, 86%);
+  box-shadow: 1px 3px 20px 5px hsl(0, 80%, 86%);
+  transform: scaleY(1.07);
   transition: 0.6s;
 }
 
 .register-btn:hover {
-  transform: scaleY(1.2) perspective(1px);
+  transform: scaleY(1.1) perspective(1px);
   background: linear-gradient(135deg, hsl(0, 100%, 98%), hsl(0, 80%, 86%));
   cursor: pointer;
+}
+
+.error-msg {
+  margin-top: 0.8rem;
+  margin-left: 1.5rem;
+  font-size: 13px;
+  color: hsl(0, 74%, 74%);
 }
 
 /* Tablet size */
@@ -175,18 +184,8 @@ label {
     width: 21rem;
   }
 
-  .register-btn {
-    position: relative;
-    left: 19.6rem;
-    bottom: 4rem;
-  }
-
   .icon-error {
-    width: 1rem;
-    position: relative;
-    top: 0.3rem;
-    right: -2rem;
-    display: none;
+    width: 1.5rem;
   }
 }
 
@@ -195,14 +194,6 @@ label {
   body {
     min-width: 370px;
     background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
-  }
-
-  label {
-    position: relative;
-    left: 10%;
-    bottom: 3rem;
-    font-size: 12px;
-    display: none;
   }
 
   .content {
@@ -258,15 +249,18 @@ label {
     letter-spacing: 10px;
   }
 
+  .register-content {
+    margin: 1.9rem auto 1.9rem;
+  }
+
   .register {
-    width: 17rem;
-    margin: 1.9rem auto;
-    padding: 0.4rem;
-    padding-left: 1rem;
+    grid-template-columns: 1.5rem 55% 2rem 1.5rem 8rem;
+    width: 18rem;
+    margin-top: 0;
   }
 
   .email {
-    width: 60%;
+    width: 100%;
     font-size: 14px;
     padding: 0.25rem;
     background-color: inherit;
@@ -274,17 +268,12 @@ label {
   }
 
   .register-btn {
-    width: 4.3rem;
-    padding: 0.8rem;
-    left: 17rem;
-    bottom: 5.08rem;
+    width: 3.8rem;
+    padding: 0.6rem;
+    transform: scaleY(1.09);
   }
 
   .icon-error {
-    position: relative;
-    top: 0.2rem;
-    right: -0.5rem;
-    display: none;
-    width: 0.7rem;
+    width: 1rem;
   }
 }
